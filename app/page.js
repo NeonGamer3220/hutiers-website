@@ -2,7 +2,7 @@
 
 import React, { useEffect, useMemo, useState } from "react";
 
-const DISCORD_INVITE = "https://discord.gg/7fanAQDxaN";
+const DISCORD_INVITE = "https://discord.gg/R3d7t7QD";
 
 const EASTER_MODE = false;
 
