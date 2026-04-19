@@ -4,16 +4,12 @@ import React, { useEffect, useMemo, useState } from "react";
 
 const DISCORD_INVITE = "https://discord.gg/7fanAQDxaN";
 
-const EASTER_MODE = true;
-const EASTER_EGGS = [
-  { emoji: "🥚" }, { emoji: "🐣" }, { emoji: "🐰" }, { emoji: "🌷" },
-  { emoji: "🦋" }, { emoji: "🌼" }, { emoji: "🐇" }, { emoji: "🌸" },
-];
+const EASTER_MODE = false;
 
 const MODE_LIST = [
   "Összes", "Vanilla", "UHC", "Pot", "NethPot", "SMP",
-  "Sword", "Axe", "Mace", "Cart", "Creeper", "DiaSMP",
-  "OGVanilla", "ShieldlessUHC", "SpearMace", "SpearElytra",
+  "Sword", "Axe", "Mace", "Cart", "DiaSMP",
+  "OGVanilla", "ShieldlessUHC",
 ];
 
 const MODE_ICONS = {
@@ -27,20 +23,16 @@ const MODE_ICONS = {
   "Axe": "/images/axe.png",
   "Mace": "/images/mace.png",
   "Cart": "/images/cart.png",
-  "Creeper": "/images/creeper.png",
   "DiaSMP": "/images/diasmp.png",
   "OGVanilla": "/images/ogvanilla.png",
-  "SpearMace": "/images/spear.png",
-  "SpearElytra": "/images/spear.png",
   "ShieldlessUHC": "/images/shieldlessuhc.png",
 };
 
 const MODE_DISPLAY_MAP = {
   "vanilla": "Vanilla", "uhc": "UHC", "pot": "Pot", "nethpot": "NethPot",
   "smp": "SMP", "sword": "Sword", "axe": "Axe", "mace": "Mace",
-  "cart": "Cart", "creeper": "Creeper", "diasmp": "DiaSMP",
+  "cart": "Cart", "diasmp": "DiaSMP",
   "ogvanilla": "OGVanilla", "shieldlessuhc": "ShieldlessUHC",
-  "spearmace": "SpearMace", "spearelytra": "SpearElytra",
 };
 
 function displayMode(mode) {
@@ -158,29 +150,9 @@ export default function Page() {
     return searched;
   }, [tests, activeMode, query]);
 
-  const floatingEggs = EASTER_MODE
-    ? Array.from({ length: 18 }, (_, i) => ({
-        key: i, emoji: EASTER_EGGS[i % EASTER_EGGS.length].emoji,
-        style: {
-          left: `${5 + (i * 5.2) % 90}%`,
-          animationDelay: `${(i * 0.7) % 6}s`,
-          animationDuration: `${6 + (i % 5) * 1.5}s`,
-          fontSize: `${18 + (i % 3) * 8}px`,
-        },
-      }))
-    : [];
-
   return (
     <div className="page">
       <div className="bg" />
-
-      {EASTER_MODE && (
-        <div className="easterEggsContainer">
-          {floatingEggs.map((egg) => (
-            <span key={egg.key} className="floatingEgg" style={egg.style}>{egg.emoji}</span>
-          ))}
-        </div>
-      )}
 
       <div style={{ paddingTop: "1rem" }} />
 
@@ -188,7 +160,7 @@ export default function Page() {
       <header className="navbar">
         <nav className="navInner">
           <a className="navLogo" href="/">
-            {EASTER_MODE ? "🐰 NeonTiers" : "NeonTiers"}
+            NeonTiers
           </a>
           <ul className="navLinks">
             <li>
@@ -242,7 +214,7 @@ export default function Page() {
 
           {/* Info bar */}
           <div className="infoBar">
-            <span className="infoText">{EASTER_MODE ? "🐰 Húsvéti tierlista" : "Tierlista"}</span>
+            <span className="infoText">Tierlista</span>
           </div>
 
           {/* Column headers - mctiers.com grid */}
