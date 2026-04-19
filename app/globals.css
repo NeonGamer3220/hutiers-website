@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg, #120f2b, #081a2e);
+  color: white;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 32px;
+  font-weight: 800;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.left {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.rank-number {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.player-name {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.badges {
+  display: flex;
+  gap: 10px;
+}
+
+.tag {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-weight: 900;
+  font-size: 13px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(0,0,0,0.3);
+  transition: 0.2s ease;
+}
+
+/* ===== GLOW SYSTEM ===== */
+
+/* Tier 1 – Yellow */
+.tier-1 {
+  color: #ffd54a;
+  border-color: #ffd54a !important;
+  box-shadow:
+    0 0 6px rgba(255,213,74,0.9),
+    0 0 18px rgba(255,213,74,0.6);
+}
+
+/* Tier 2 – Silver */
+.tier-2 {
+  color: #e6e6e6;
+  border-color: #e6e6e6 !important;
+  box-shadow:
+    0 0 6px rgba(230,230,230,0.9),
+    0 0 18px rgba(230,230,230,0.6);
+}
+
+/* Tier 3 – Bronze */
+.tier-3 {
+  color: #cd7f32;
+  border-color: #cd7f32 !important;
+  box-shadow:
+    0 0 6px rgba(205,127,50,0.9),
+    0 0 18px rgba(205,127,50,0.6);
+}
+
+/* Tier 4 – Neon Purple */
+.tier-4 {
+  color: #c23bff;
+  border-color: #c23bff !important;
+  box-shadow:
+    0 0 6px rgba(194,59,255,0.9),
+    0 0 18px rgba(194,59,255,0.6);
+}
+
+/* Tier 5 – Blue */
+.tier-5 {
+  color: #4db2ff;
+  border-color: #4db2ff !important;
+  box-shadow:
+    0 0 6px rgba(77,178,255,0.9),
+    0 0 18px rgba(77,178,255,0.6);
+}
+
+.points {
+  text-align: right;
+}
+
+.points-value {
+  font-size: 34px;
+  font-weight: 900;
+  color: #4db2ff;
+}
+
+.points-label {
+  font-size: 13px;
+  opacity: 0.7;
+}
