@@ -160,7 +160,7 @@ export default function Page() {
       <header className="navbar">
         <nav className="navInner">
           <a className="navLogo" href="/">
-            NeonTiers
+            Hutiers
           </a>
           <ul className="navLinks">
             <li>
@@ -326,7 +326,7 @@ export default function Page() {
       </main>
 
       <footer className="pageFooter">
-        <div className="footerText">NeonTiers © {new Date().getFullYear()}</div>
+        <div className="footerText">Hutiers © {new Date().getFullYear()}</div>
       </footer>
 
       <style jsx global>{`
