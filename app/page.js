@@ -433,7 +433,7 @@ export default function Page() {
         .tabBtn {
           display: flex; flex-direction: column; align-items: center;
           justify-content: flex-end; gap: 3px; padding: 6px 8px;
-          min-width: 72px; text-decoration: none; cursor: pointer;
+          min-width: 80px; text-decoration: none; cursor: pointer;
           user-select: none; position: relative;
           border: 2px solid transparent; border-bottom: none;
           border-radius: 18px 18px 0 0; background: transparent;
@@ -666,8 +666,8 @@ export default function Page() {
         @media (max-width: 768px) {
           .navLinks { display: none; }
           .searchInput { width: 100px; }
-          .tabBtn { min-width: 72px; padding: 6px 10px; }
-          .tabIcon { width: 24px; height: 24px; }
+          .tabBtn { min-width: 80px; padding: 6px 10px; }
+          .tabIcon { width: 32px; height: 32px; }
           .tabLabel { font-size: 10px; }
           .colTiers { display: none; }
           .rowTiers { display: none; }
