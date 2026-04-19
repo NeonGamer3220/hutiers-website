@@ -331,12 +331,12 @@ export default function Page() {
 
       <style jsx global>{`
         :root {
-          --bg: #0d1b2a;
-          --card: #1b263b;
+          --bg: #09090b;
+          --card: #0a0a0f;
           --border: rgba(255,255,255,0.08);
           --text: rgba(255,255,255,0.87);
           --muted: rgba(255,255,255,0.45);
-          --accent: rgba(37,150,190,0.5);
+          --accent: rgba(139,92,246,0.5);
         }
 
         * { box-sizing: border-box; }
@@ -446,7 +446,7 @@ export default function Page() {
         }
 
         .tabBtn.active {
-          background: rgba(37,150,190,0.15); color: var(--text);
+          background: rgba(139,92,246,0.15); color: var(--text);
           border-color: var(--border);
         }
 
@@ -457,8 +457,6 @@ export default function Page() {
 
         .tabIcon {
           width: 24px; height: 24px;
-          border-radius: 4px;
-          box-shadow: 0 0 0 1px rgba(255,255,255,0.1) inset;
         }
 
         .tabLabel {
@@ -502,19 +500,19 @@ export default function Page() {
           background: rgba(255,255,255,0.04);
           border-color: rgba(255,255,255,0.14);
           transform: scale(1.01);
-          box-shadow: 0 4px 20px rgba(0,0,0,0.3), 0 0 0 1px rgba(37,150,190,0.15);
+          box-shadow: 0 4px 20px rgba(0,0,0,0.3), 0 0 0 1px rgba(139,92,246,0.15);
         }
 
         .playerRowSelected {
-          background: rgba(37,150,190,0.08);
-          border-color: rgba(37,150,190,0.25);
+          background: rgba(139,92,246,0.08);
+          border-color: rgba(139,92,246,0.25);
           margin-bottom: 0;
         }
 
         /* ===== PLAYER DETAIL ===== */
         .playerDetail {
           display: flex; gap: 20px; padding: 16px 20px 20px 134px;
-          background: rgba(37,150,190,0.05);
+          background: rgba(139,92,246,0.05);
           border-bottom: 1px solid rgba(255,255,255,0.04);
           border-radius: 0 0 10px 10px;
           animation: slideDown 0.15s ease;
@@ -613,8 +611,6 @@ export default function Page() {
 
         .tierIcon {
           width: 28px; height: 28px;
-          border-radius: 4px;
-          box-shadow: 0 0 0 1px rgba(255,255,255,0.1) inset;
         }
 
         .tierLabel {
