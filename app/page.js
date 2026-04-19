@@ -457,6 +457,9 @@ export default function Page() {
 
         .tabIcon {
           width: 24px; height: 24px;
+          border: 1px solid var(--border);
+          border-radius: 4px;
+          background: rgba(255,255,255,0.05);
         }
 
         .tabLabel {
@@ -611,6 +614,9 @@ export default function Page() {
 
         .tierIcon {
           width: 28px; height: 28px;
+          border: 1px solid var(--border);
+          border-radius: 4px;
+          background: rgba(255,255,255,0.05);
         }
 
         .tierLabel {
